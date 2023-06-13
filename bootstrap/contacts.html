@@ -62,8 +62,43 @@
         Контакты
       </h1>
     </section>
-    <section>
+    <section class="container">
+        <div class="row">
+            <div class="col">
+                <form action="/submit" method="post">
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Name</label>
+                  <textarea class="form-control" name="name" id="exampleFormControlTextarea1" rows="1"></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput2" class="form-label">Email</label>
+                  <input type="email" class="form-control" name="email" id="exampleFormControlInput2" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea2" class="form-label">Message</label>
+                  <textarea class="form-control" name="message" id="exampleFormControlTextarea2" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                  <h3 class="d-flex justify-content-center align-items-center h-100">
+                      Наши контакты.
+                  </h3>
 
+                </div>
+                <div class="mb-3">
+                  <p class="d-flex justify-content-center align-items-center h-100">
+                      orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+
+                </div>
+            </div>
     </section>
 
 </body>
