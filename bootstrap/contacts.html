@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      header {
+        padding-top: 72px; /* высота header */
+      }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <!-- JavaScript and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <header>
+        <nav class="navbar bg-body-tertiary fixed-top">
+          <div class="container-xxl">
+            <a class="navbar-brand" href="#">Меню</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Категории</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Заказы</a>
+                  </li>
+                  <li class="nav-item">
+                    <span class="glyphicon glyphicon-search" aria-hidden="false"></span>
+                    <a class="nav-link" href="#">Контакты</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Пользователь
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Профиль</a></li>
+                      <li><a class="dropdown-item" href="#">Выход</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <section class="d-flex justify-content-center align-items-center h-100">
+      <h1 class="text-center">
+        Контакты
+      </h1>
+    </section>
+    <section class="container">
+        <div class="row">
+            <div class="col">
+                <form action="/submit" method="post">
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Name</label>
+                  <textarea class="form-control" name="name" id="exampleFormControlTextarea1" rows="1"></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput2" class="form-label">Email</label>
+                  <input type="email" class="form-control" name="email" id="exampleFormControlInput2" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea2" class="form-label">Message</label>
+                  <textarea class="form-control" name="message" id="exampleFormControlTextarea2" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col">
+                <div class="mb-3">
+                  <h3 class="d-flex justify-content-center align-items-center h-100">
+                      Наши контакты.
+                  </h3>
+
+                </div>
+                <div class="mb-3">
+                  <p class="d-flex justify-content-center align-items-center h-100">
+                      orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                      non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+
+                </div>
+            </div>
+    </section>
+
+</body>
+</html>
