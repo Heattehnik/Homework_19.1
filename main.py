@@ -8,7 +8,7 @@ serverPort = 8080
 class MyServer(BaseHTTPRequestHandler):
 
     def do_GET(self):
-        with open('./bootstrap/index.html') as file:
+        with open('./bootstrap/catalog.html') as file:
             html_content = file.read()
         self.send_response(200)
         self.send_header("Content-type", "text/html")
